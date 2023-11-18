@@ -1,12 +1,12 @@
 import React from 'react';
 import Icon from './icon';
 
-const IconExample: React.FunctionComponent = () => {
+const IconExample: React.FC = () => {
   return (
     <div>
-      <Icon name="alipay"/>
-      <Icon name="wechat"/>
-      <Icon name="qq"/>
+      <Icon name="alipay" />
+      <Icon name="wechat" />
+      <Icon name="qq" />
     </div>
   );
 };

@@ -1,5 +1,5 @@
 {
-  "name": "fui888",
+  "name": "idbi-ui",
   "version": "1.1.1",
   "description": "",
   "main": "dist/lib/index",
@@ -20,10 +20,6 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/FrankFang/frank-test-2/issues"
-  },
-  "homepage": "https://github.com/FrankFang/frank-test-2#readme",
   "devDependencies": {
     "@babel/preset-env": "^7.3.4",
     "@babel/preset-react": "^7.0.0",
