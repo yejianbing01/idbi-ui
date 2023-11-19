@@ -1,8 +1,6 @@
-function classes(...names: (string | undefined)[]) {
+export default function classes(...names: (string | undefined)[]) {
   return names.filter(Boolean).join(' ');
 }
-
-export default classes;
 
 interface Options {
   extra: string | undefined
@@ -12,8 +10,7 @@ interface ClassToggles {
   [K: string]: boolean
 }
 
-function scopedClassMaker(prefix: string) {
-
+export function scopedClassMaker(prefix: string) {
   return (name: string | ClassToggles, options?: Options) =>
     Object
       .entries(name instanceof Object ? name : { [name]: name })
@@ -25,5 +22,3 @@ function scopedClassMaker(prefix: string) {
       .concat(options && options.extra || [])
       .join(' ');
 }
-
-export { scopedClassMaker };
