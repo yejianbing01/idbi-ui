@@ -6,6 +6,7 @@ const sc = scopedClassMaker('idbi-dialog')
 
 interface DialogProps {
   visible?: boolean
+  title: string
 }
 const Dialog: FC<DialogProps> = (props) => {
   return (
@@ -14,10 +15,14 @@ const Dialog: FC<DialogProps> = (props) => {
       <>
         <div className={sc('mask')} />
         <div className={sc('')}>
-          <div className={sc('close')}>
-            <Icon name='close' />
-          </div>
-          <header className={sc('header')}></header>
+          <header className={sc('header')}>
+            <div className={sc('header-title')}>
+              {props.title}
+            </div>
+            <div className={sc('header-close')}>
+              <Icon name='close' />
+            </div>
+          </header>
           <main className={sc('main')}>
             {props.children}
           </main>

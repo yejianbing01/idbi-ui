@@ -8,7 +8,7 @@ const DialogExample: React.FC = () => {
   return (
     <div>
       <button onClick={onClick}>hi</button>
-      <Dialog visible={visible} >
+      <Dialog visible={visible} title='标题' >
         弹出
       </Dialog>
     </div>
